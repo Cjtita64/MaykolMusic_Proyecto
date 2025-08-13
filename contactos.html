@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Meta tags básicos para SEO y responsividad -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaykolMusic - Contacto</title>
+    
+    <!-- Framework CSS Tailwind para estilos rápidos -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Iconos de Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Archivo CSS personalizado -->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Favicon del sitio -->
+    <link rel="icon" href="img/logo.png">
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navegación principal -->
+    <header class="bg-white shadow-md py-4 sticky top-0 z-50" id="header">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <!-- Logo y nombre de la empresa -->
+            <div class="flex items-center">
+                <img src="img/logo.png" alt="Logo MaykolMusic" class="h-14 w-14 rounded-full object-cover mr-3 border-2 border-gray-200">
+                <span class="text-2xl font-bold text-gray-800">MaykolMusic</span>
+            </div>
+            
+            <!-- Navegación para escritorio -->
+            <nav class="hidden md:flex">
+                <ul class="flex space-x-8">
+                    <li><a href="index.html" class="text-gray-600 font-medium hover:text-red-600 transition">Inicio</a></li>
+                    <li><a href="nosotros.html" class="text-gray-600 font-medium hover:text-red-600 transition">Nosotros</a></li>
+                    <li><a href="servicios.html" class="text-gray-600 font-medium hover:text-red-600 transition">Servicios</a></li>
+                    <li><a href="contactos.html" class="text-red-600 font-medium hover:text-red-800 transition">Contacto</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Botón de menú móvil -->
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-gray-600 focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Menú móvil desplegable -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-4 py-2">
+            <ul class="space-y-3">
+                <li><a href="index.html" class="block text-gray-600 font-medium hover:text-red-600">Inicio</a></li>
+                <li><a href="nosotros.html" class="block text-gray-600 font-medium hover:text-red-600">Nosotros</a></li>
+                <li><a href="servicios.html" class="block text-gray-600 font-medium hover:text-red-600">Servicios</a></li>
+                <li><a href="contactos.html" class="block text-red-600 font-medium">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-red-600 to-red-800 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Contáctanos</h1>
+            <p class="text-xl mb-8">Estamos aquí para ayudarte con todas tus necesidades musicales</p>
+        </div>
+    </section>
+
+    <!-- Información de contacto y formulario -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <!-- Información de contacto -->
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-8">Información de Contacto</h2>
+                    
+                    <!-- Dirección -->
+                    <div class="flex items-start space-x-4 mb-6">
+                        <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-map-marker-alt text-red-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Dirección</h3>
+                            <p class="text-gray-600">san juan de pariachi</p>
+                            <p class="text-gray-600">Lima, Perú 15074</p>
+                        </div>
+                    </div>
+
+                    <!-- Teléfono -->
+                    <div class="flex items-start space-x-4 mb-6">
+                        <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-phone text-red-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Teléfono</h3>
+                            <p class="text-gray-600">+51 999 888 777</p>
+                            <p class="text-gray-600">+51 1 234 5678</p>
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="flex items-start space-x-4 mb-6">
+                        <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-envelope text-red-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Email</h3>
+                            <p class="text-gray-600">info@maykolmusic.com</p>
+                            <p class="text-gray-600">ventas@maykolmusic.com</p>
+                        </div>
+                    </div>
+
+                    <!-- Horarios -->
+                    <div class="flex items-start space-x-4 mb-8">
+                        <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-clock text-red-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Horarios de Atención</h3>
+                            <p class="text-gray-600">Lunes a Viernes: 9:00 AM - 7:00 PM</p>
+                            <p class="text-gray-600">Sábados: 9:00 AM - 5:00 PM</p>
+                            <p class="text-gray-600">Domingos: 10:00 AM - 3:00 PM</p>
+                        </div>
+                    </div>
+
+                    <!-- Redes sociales -->
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Síguenos en redes sociales</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-pink-600 text-white rounded-full flex items-center justify-center hover:bg-pink-700 transition">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-red-600 text-white rounded-full flex items-center justify-center hover:bg-red-700 transition">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center hover:bg-green-700 transition">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulario de contacto -->
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-8">Envíanos un mensaje</h2>
+                    
+                    <form id="contactForm" class="space-y-6">
+                        <!-- Nombre -->
+                        <div>
+                            <label for="nombre" class="block text-sm font-medium text-gray-700 mb-2">Nombre completo *</label>
+                            <input 
+                                type="text" 
+                                id="nombre" 
+                                name="nombre" 
+                                required 
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 transition"
+                                placeholder="Tu nombre completo"
+                            >
+                        </div>
+
+                        <!-- Email -->
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email *</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                required 
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 transition"
+                                placeholder="tu@email.com"
+                            >
+                        </div>
+
+                        <!-- Teléfono -->
+                        <div>
+                            <label for="telefono" class="block text-sm font-medium text-gray-700 mb-2">Teléfono</label>
+                            <input 
+                                type="tel" 
+                                id="telefono" 
+                                name="telefono" 
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 transition"
+                                placeholder="+51 999 888 777"
+                            >
+                        </div>
+
+                        <!-- Asunto -->
+                        <div>
+                            <label for="asunto" class="block text-sm font-medium text-gray-700 mb-2">Asunto *</label>
+                            <select 
+                                id="asunto" 
+                                name="asunto" 
+                                required 
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 transition"
+                            >
+                                <option value="">Selecciona un asunto</option>
+                                <option value="consulta-general">Consulta general</option>
+                                <option value="venta-instrumentos">Venta de instrumentos</option>
+                                <option value="clases-musica">Clases de música</option>
+                                <option value="estudio-grabacion">Estudio de grabación</option>
+                                <option value="servicio-tecnico">Servicio técnico</option>
+                                <option value="cotizacion">Solicitar cotización</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+
+                        <!-- Mensaje -->
+                        <div>
+                            <label for="mensaje" class="block text-sm font-medium text-gray-700 mb-2">Mensaje *</label>
+                            <textarea 
+                                id="mensaje" 
+                                name="mensaje" 
+                                rows="5" 
+                                required 
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 transition resize-none"
+                                placeholder="Escribe tu mensaje aquí..."
+                            ></textarea>
+                        </div>
+
+                        <!-- Checkbox de términos -->
+                        <div class="flex items-start space-x-3">
+                            <input 
+                                type="checkbox" 
+                                id="terminos" 
+                                name="terminos" 
+                                required 
+                                class="mt-1 w-4 h-4 text-red-600 border-gray-300 rounded focus:ring-red-500"
+                            >
+                            <label for="terminos" class="text-sm text-gray-600">
+                                Acepto los <a href="#" class="text-red-600 hover:text-red-800 underline">términos y condiciones</a> y autorizo el tratamiento de mis datos personales.
+                            </label>
+                        </div>
+
+                        <!-- Botón de envío -->
+                        <button 
+                            type="submit" 
+                            class="w-full bg-red-600 text-white py-3 px-6 rounded-lg font-medium hover:bg-red-700 transition flex items-center justify-center space-x-2"
+                        >
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Enviar mensaje</span>
+                        </button>
+                    </form>
+
+                    <!-- Mensaje de confirmación (oculto inicialmente) -->
+                    <div id="confirmationMessage" class="hidden mt-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle mr-2"></i>
+                            <span>¡Mensaje enviado correctamente! Te contactaremos pronto.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapa (simulado) -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Nuestra Ubicación</h2>
+            
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <!-- Simulación de mapa -->
+                <div class="h-96 bg-gray-300 flex items-center justify-center relative">
+                    <div class="text-center">
+                        <i class="fas fa-map-marker-alt text-red-600 text-6xl mb-4"></i>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">MaykolMusic</h3>
+                        <p class="text-gray-600">Av. Principal 123, Miraflores, Lima</p>
+                        <a 
+                            href="https://maps.google.com/?q=Av.+Principal+123,+Miraflores,+Lima" 
+                            target="_blank" 
+                            class="inline-block mt-4 bg-red-600 text-white px-6 py-2 rounded-lg hover:bg-red-700 transition"
+                        >
+                            Ver en Google Maps
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Información adicional del mapa -->
+                <div class="p-6 bg-white">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <i class="fas fa-car text-red-600 text-2xl mb-2"></i>
+                            <h4 class="font-bold text-gray-800 mb-1">Estacionamiento</h4>
+                            <p class="text-gray-600 text-sm">Estacionamiento gratuito disponible</p>
+                        </div>
+                        <div class="text-center">
+                            <i class="fas fa-bus text-red-600 text-2xl mb-2"></i>
+                            <h4 class="font-bold text-gray-800 mb-1">Transporte público</h4>
+                            <p class="text-gray-600 text-sm">Cerca de estaciones de bus y metro</p>
+                        </div>
+                        <div class="text-center">
+                            <i class="fas fa-wheelchair text-red-600 text-2xl mb-2"></i>
+                            <h4 class="font-bold text-gray-800 mb-1">Accesibilidad</h4>
+                            <p class="text-gray-600 text-sm">Instalaciones accesibles para todos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preguntas frecuentes -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Preguntas Frecuentes</h2>
+            
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- FAQ 1 -->
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="faq-button w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition">
+                        <span class="font-medium text-gray-800">¿Ofrecen garantía en los instrumentos?</span>
+                        <i class="fas fa-chevron-down text-gray-400 transform transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-gray-600">Sí, todos nuestros instrumentos nuevos incluyen garantía del fabricante. Además, ofrecemos garantía adicional en nuestros servicios de reparación y mantenimiento.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="faq-button w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition">
+                        <span class="font-medium text-gray-800">¿Puedo probar los instrumentos antes de comprar?</span>
+                        <i class="fas fa-chevron-down text-gray-400 transform transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-gray-600">Por supuesto. Contamos con salas de prueba donde puedes tocar y comparar diferentes instrumentos antes de tomar tu decisión de compra.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="faq-button w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition">
+                        <span class="font-medium text-gray-800">¿Ofrecen clases para principiantes?</span>
+                        <i class="fas fa-chevron-down text-gray-400 transform transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-gray-600">Sí, tenemos programas especiales para principiantes de todas las edades. Nuestros profesores adaptan las clases al nivel y ritmo de cada estudiante.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="faq-button w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition">
+                        <span class="font-medium text-gray-800">¿Cuánto tiempo toma una reparación?</span>
+                        <i class="fas fa-chevron-down text-gray-400 transform transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-gray-600">El tiempo depende del tipo de reparación. Reparaciones menores pueden tomar 1-3 días, mientras que trabajos más complejos pueden requerir 1-2 semanas. Te daremos un estimado al evaluar tu instrumento.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="faq-button w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition">
+                        <span class="font-medium text-gray-800">¿Aceptan instrumentos usados como parte de pago?</span>
+                        <i class="fas fa-chevron-down text-gray-400 transform transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-gray-600">Sí, evaluamos instrumentos usados y podemos aceptarlos como parte de pago para la compra de instrumentos nuevos, sujeto a evaluación técnica y de mercado.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Información de la empresa -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">MaykolMusic</h3>
+                    <p class="text-gray-300 mb-4">Tu tienda de confianza para instrumentos musicales, clases y servicios técnicos especializados.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Enlaces rápidos -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Enlaces rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white transition">Inicio</a></li>
+                        <li><a href="nosotros.html" class="text-gray-300 hover:text-white transition">Nosotros</a></li>
+                        <li><a href="servicios.html" class="text-gray-300 hover:text-white transition">Servicios</a></li>
+                        <li><a href="contactos.html" class="text-gray-300 hover:text-white transition">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Servicios -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Servicios</h4>
+                    <ul class="space-y-2">
+                        <li><a href="servicios.html" class="text-gray-300 hover:text-white transition">Venta de instrumentos</a></li>
+                        <li><a href="servicios.html" class="text-gray-300 hover:text-white transition">Clases de música</a></li>
+                        <li><a href="servicios.html" class="text-gray-300 hover:text-white transition">Estudio de grabación</a></li>
+                        <li><a href="servicios.html" class="text-gray-300 hover:text-white transition">Servicio técnico</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contacto -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contacto</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>Av. Principal 123, Lima</p>
+                        <p><i class="fas fa-phone mr-2"></i>+51 999 888 777</p>
+                        <p><i class="fas fa-envelope mr-2"></i>info@maykolmusic.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2025 MaykolMusic. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript para funcionalidades -->
+    <script>
+        // Funcionalidad del menú móvil
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Funcionalidad del formulario de contacto
+        const contactForm = document.getElementById('contactForm');
+        const confirmationMessage = document.getElementById('confirmationMessage');
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simular envío del formulario
+            setTimeout(() => {
+                // Mostrar mensaje de confirmación
+                confirmationMessage.classList.remove('hidden');
+                
+                // Limpiar formulario
+                contactForm.reset();
+                
+                // Ocultar mensaje después de 5 segundos
+                setTimeout(() => {
+                    confirmationMessage.classList.add('hidden');
+                }, 5000);
+            }, 1000);
+        });
+
+        // Funcionalidad de las preguntas frecuentes
+        const faqButtons = document.querySelectorAll('.faq-button');
+        
+        faqButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                // Cerrar todas las otras FAQs
+                faqButtons.forEach(otherButton => {
+                    if (otherButton !== button) {
+                        const otherContent = otherButton.nextElementSibling;
+                        const otherIcon = otherButton.querySelector('i');
+                        otherContent.classList.add('hidden');
+                        otherIcon.classList.remove('rotate-180');
+                    }
+                });
+                
+                // Toggle la FAQ actual
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+    </script>
+</body>
+</html>
+

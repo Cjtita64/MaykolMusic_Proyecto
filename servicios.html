@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Meta tags básicos para SEO y responsividad -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaykolMusic - Servicios</title>
+    
+    <!-- Framework CSS Tailwind para estilos rápidos -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Iconos de Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Archivo CSS personalizado -->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Favicon del sitio -->
+    <link rel="icon" href="img/logo.png">
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navegación principal -->
+    <header class="bg-white shadow-md py-4 sticky top-0 z-50" id="header">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <!-- Logo y nombre de la empresa -->
+            <div class="flex items-center">
+                <img src="img/logo.png" alt="Logo MaykolMusic" class="h-14 w-14 rounded-full object-cover mr-3 border-2 border-gray-200">
+                <span class="text-2xl font-bold text-gray-800">MaykolMusic</span>
+            </div>
+            
+            <!-- Navegación para escritorio -->
+            <nav class="hidden md:flex">
+                <ul class="flex space-x-8">
+                    <li><a href="index.html" class="text-gray-600 font-medium hover:text-red-600 transition">Inicio</a></li>
+                    <li><a href="nosotros.html" class="text-gray-600 font-medium hover:text-red-600 transition">Nosotros</a></li>
+                    <li><a href="servicios.html" class="text-red-600 font-medium hover:text-red-800 transition">Servicios</a></li>
+                    <li><a href="contactos.html" class="text-gray-600 font-medium hover:text-red-600 transition">Contacto</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Botón de menú móvil -->
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-gray-600 focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Menú móvil desplegable -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-4 py-2">
+            <ul class="space-y-3">
+                <li><a href="index.html" class="block text-gray-600 font-medium hover:text-red-600">Inicio</a></li>
+                <li><a href="nosotros.html" class="block text-gray-600 font-medium hover:text-red-600">Nosotros</a></li>
+                <li><a href="servicios.html" class="block text-red-600 font-medium">Servicios</a></li>
+                <li><a href="contactos.html" class="block text-gray-600 font-medium hover:text-red-600">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-red-600 to-red-800 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Nuestros Servicios</h1>
+            <p class="text-xl mb-8">Descubre todo lo que MaykolMusic tiene para ofrecerte</p>
+        </div>
+    </section>
+
+    <!-- Servicios principales -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Servicio 1: Venta de Instrumentos -->
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-guitar text-red-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Venta de Instrumentos</h3>
+                    <p class="text-gray-600 mb-4">Amplia variedad de instrumentos musicales de las mejores marcas del mercado.</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Guitarras acústicas y eléctricas</li>
+                        <li>• Baterías y percusión</li>
+                        <li>• Teclados y pianos</li>
+                        <li>• Instrumentos de viento</li>
+                    </ul>
+                </div>
+
+                <!-- Servicio 2: Clases de Música -->
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-music text-red-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Clases de Música</h3>
+                    <p class="text-gray-600 mb-4">Aprende con profesores experimentados en un ambiente profesional.</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Clases individuales y grupales</li>
+                        <li>• Todos los niveles</li>
+                        <li>• Horarios flexibles</li>
+                        <li>• Certificación disponible</li>
+                    </ul>
+                </div>
+
+                <!-- Servicio 3: Estudio de Grabación -->
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-microphone text-red-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Estudio de Grabación</h3>
+                    <p class="text-gray-600 mb-4">Estudio profesional con equipos de última generación para tus proyectos musicales.</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Grabación multipista</li>
+                        <li>• Mezcla y masterización</li>
+                        <li>• Producción musical</li>
+                        <li>• Equipos profesionales</li>
+                    </ul>
+                </div>
+
+                <!-- Servicio 4: Servicio Técnico -->
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-tools text-red-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Servicio Técnico</h3>
+                    <p class="text-gray-600 mb-4">Reparación y mantenimiento especializado para todos los instrumentos.</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Reparaciones especializadas</li>
+                        <li>• Mantenimiento preventivo</li>
+                        <li>• Ajustes y calibración</li>
+                        <li>• Garantía en trabajos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección del Estudio de Grabación con Reproductor Simple -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Estudio de Grabación Profesional</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Escucha una muestra de nuestro trabajo profesional en el estudio de grabación.</p>
+            </div>
+
+            <!-- Reproductor Simple -->
+            <div class="bg-white rounded-lg shadow-lg p-8 max-w-4xl mx-auto">
+                <div class="mb-6">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">Muestra de Grabación - "Te Dejé Ir"</h3>
+                    
+                    <!-- Reproductor de audio HTML5 -->
+                    <div class="flex justify-center mb-6">
+                        <audio controls class="w-full max-w-md">
+                            <source src="audio/TE DEJE IR  - MAYKOL IA VF.mp3" type="audio/mpeg">
+                            Tu navegador no soporta el elemento de audio.
+                        </audio>
+                    </div>
+                </div>
+
+            <!-- Video de YouTube -->
+            <div class="mt-12 max-w-4xl mx-auto">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Video Promocional del Estudio</h3>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="aspect-video bg-gray-200 rounded-lg flex items-center justify-center">
+                        <!-- Aquí se insertará el video de YouTube -->
+                        <div id="youtube-player" class="w-full h-full rounded-lg">
+                            <iframe 
+                                width="100%" 
+                                height="100%" 
+                                src="https://www.youtube.com/embed/Euqb6Xqzd48?list=RDEuqb6Xqzd48" 
+                                title="Video del Estudio" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen
+                                class="rounded-lg">
+                            </iframe>
+                        </div>
+                    </div>
+                    <p class="text-center text-gray-600 mt-4">
+                        <strong>Nota:</strong> Reemplaza el enlace de YouTube en el código con tu video promocional
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Clases de Música -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Clases de Música</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Aprende con los mejores profesores en un ambiente profesional y amigable.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Video local de clases -->
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Conoce Nuestras Clases</h3>
+                    <div class="bg-gray-200 rounded-lg overflow-hidden shadow-lg">
+                        <video 
+                            id="classVideo" 
+                            controls 
+                            class="w-full h-auto"
+                            poster="img/video-poster.jpg">
+                            <source src="media/demo.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+
+                <!-- Información de clases -->
+                <div>
+                    <div class="space-y-6">
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h4 class="text-xl font-bold text-gray-800 mb-3">Modalidades de Clase</h4>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Clases individuales personalizadas</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Clases grupales (máximo 4 personas)</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Talleres especializados</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Clases online disponibles</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h4 class="text-xl font-bold text-gray-800 mb-3">Instrumentos Disponibles</h4>
+                            <div class="grid grid-cols-2 gap-2 text-gray-600">
+                                <div class="flex items-center"><i class="fas fa-guitar text-red-500 mr-2"></i> Guitarra</div>
+                                <div class="flex items-center"><i class="fas fa-drum text-red-500 mr-2"></i> Batería</div>
+                                <div class="flex items-center"><i class="fas fa-piano text-red-500 mr-2"></i> Piano</div>
+                                <div class="flex items-center"><i class="fas fa-microphone text-red-500 mr-2"></i> Canto</div>
+                                <div class="flex items-center"><i class="fas fa-music text-red-500 mr-2"></i> Bajo</div>
+                                <div class="flex items-center"><i class="fas fa-saxophone text-red-500 mr-2"></i> Vientos</div>
+                            </div>
+                        </div>
+
+                        <div class="bg-red-50 p-6 rounded-lg border-l-4 border-red-500">
+                            <h4 class="text-xl font-bold text-gray-800 mb-3">Precios Especiales</h4>
+                            <p class="text-gray-600 mb-3">Aprovecha nuestras promociones:</p>
+                            <ul class="space-y-1 text-gray-600">
+                                <li>• Clase individual: S/80</li>
+                                <li>• Paquete 4 clases: S/300 (ahorra S/20)</li>
+                                <li>• Paquete mensual: S/280 (ahorra S/40)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Información de la empresa -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">MaykolMusic</h3>
+                    <p class="text-gray-300 mb-4">Tu tienda de confianza para instrumentos musicales, clases y servicios técnicos especializados.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Enlaces rápidos -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Enlaces rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white transition">Inicio</a></li>
+                        <li><a href="nosotros.html" class="text-gray-300 hover:text-white transition">Nosotros</a></li>
+                        <li><a href="servicios.html" class="text-gray-300 hover:text-white transition">Servicios</a></li>
+                        <li><a href="contactos.html" class="text-gray-300 hover:text-white transition">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Servicios -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Servicios</h4>
+                    <ul class="space-y-2">
+                        <li><a href="servicios.html" class="text-gray-300 hover:text-white transition">Venta de instrumentos</a></li>
+                        <li><a href="servicios.html" class="text-gray-300 hover:text-white transition">Clases de música</a></li>
+                        <li><a href="servicios.html" class="text-gray-300 hover:text-white transition">Estudio de grabación</a></li>
+                        <li><a href="servicios.html" class="text-gray-300 hover:text-white transition">Servicio técnico</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contacto -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contacto</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>Av. Principal 123, Lima</p>
+                        <p><i class="fas fa-phone mr-2"></i>+51 999 888 777</p>
+                        <p><i class="fas fa-envelope mr-2"></i>info@maykolmusic.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2025 MaykolMusic. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript solo para el menú móvil -->
+    <script>
+        // Funcionalidad del menú móvil
+        const menuToggle = document.getElementById("menu-toggle");
+        const mobileMenu = document.getElementById("mobile-menu");
+        
+        menuToggle.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+</body>
+</html>
